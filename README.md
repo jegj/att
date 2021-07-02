@@ -24,6 +24,7 @@ ARGS:
     <task_name>    Task's name or code
 ```
 
+__NOTE__ <time> must follow human format. For more information check [humnatime](https://docs.rs/humantime/2.1.0/humantime/fn.parse_duration.html)
 ### stop
 
 Stop tracking time on the current task
@@ -42,6 +43,8 @@ OPTIONS:
 ARGS:
     <task_name>    Task's name or code
 ```
+
+__NOTE__ <time> must follow human format. For more information check [humnatime](https://docs.rs/humantime/2.1.0/humantime/fn.parse_duration.html)
 ### report
 
 List all the tasks registered with their time logged
