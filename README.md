@@ -13,8 +13,6 @@ USAGE:
 
 FLAGS:
     -o, --only-create       No start timer on this task
-    -h, --help              Prints help information
-    -V, --version           Prints version information
 
 OPTIONS:
     -i, --initial-time <time>    Set initial time on the task.
@@ -33,10 +31,6 @@ Stop tracking time on the current task
 USAGE:
     att stop [FLAGS/OPTIONS] [<task_name>]
 
-FLAGS:
-    -h, --help              Prints help information
-    -V, --version           Prints version information
-
 OPTIONS:
     -f, --final-time <time>      Set final time on the task.
 
@@ -52,11 +46,6 @@ List all the tasks registered with their time logged
 ```
 USAGE:
     att report [FLAGS/OPTIONS]
-
-FLAGS:
-    -h, --help              Prints help information
-    -V, --version           Prints version information
-
 ```
 ### delete
 
@@ -65,10 +54,6 @@ Delete a task and its time logged
 ```
 USAGE:
     att delete [FLAGS/OPTIONS] [<task_name>]
-
-FLAGS:
-    -h, --help              Prints help information
-    -V, --version           Prints version information
 
 ARGS:
     <task_name>    Task's name or code
