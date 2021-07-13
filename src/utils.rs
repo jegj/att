@@ -1,5 +1,3 @@
-use chrono::{Local, TimeZone};
-
 pub fn autogenerate_task_name(current_date: chrono::Date<chrono::Local>) -> String {
     current_date.format("task_%Y%m%d").to_string()
 }
@@ -7,6 +5,8 @@ pub fn autogenerate_task_name(current_date: chrono::Date<chrono::Local>) -> Stri
 #[cfg(test)]
 mod tests {
     use super::*;
+    use chrono::Local;
+    use chrono::TimeZone;
 
     #[test]
     fn test_autogenerate_task_name() {

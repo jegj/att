@@ -1,14 +1,10 @@
-#![allow(dead_code, unused_imports)]
 extern crate clap;
-
-use std::string;
 
 use chrono::Local;
 
 mod utils;
 
 use clap::{crate_authors, crate_description, crate_name, crate_version, App, Arg, SubCommand};
-use thiserror::Error;
 fn main() -> Result<(), anyhow::Error> {
     let matches = App::new(crate_name!())
         .version(crate_version!())
