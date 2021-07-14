@@ -12,11 +12,12 @@ USAGE:
     att start [FLAGS/OPTIONS] [<task_name>]
 
 FLAGS:
-    -o, --only-create       No start timer on this task
+    -o, --only-create            No start timer on this task
 
 OPTIONS:
-    -i, --initial-time <time>    Set initial time on the task.
-    -f, --final-time <time>      Set final time on the task.
+    -s, --start-time   <time>    Set start time to the task.
+    -e, --end-time     <time>    Set end time on the task.
+    -d, --description  <desc>    Set description on the task.
 
 ARGS:
     <task_name>    Task's name or code
