@@ -3,50 +3,40 @@
 Another Time Tracker based on [rust](https://www.rust-lang.org/) that helps you track time on tasks.
 
 ## Availables Commnands
-### start
+### create
 
-Start or create a new task
+Create a new task
 
 ```
 USAGE:
-    att start [FLAGS/OPTIONS] [<task_name>]
-
-FLAGS:
-    -o, --only-create            No start timer on this task
+    att create [FLAGS/OPTIONS] <task_name>
 
 OPTIONS:
-    -s, --start-time   <time>    Set start time to the task.
-    -e, --end-time     <time>    Set end time on the task.
     -d, --description  <desc>    Set description on the task.
 
 ARGS:
     <task_name>    Task's name or code
 ```
+### log
 
-__NOTE__ <time> must follow human format. For more information check [humnatime](https://docs.rs/humantime/2.1.0/humantime/fn.parse_duration.html)
-### stop
-
-Stop tracking time on the current task
+Log time to an specific task
 
 ```
 USAGE:
-    att stop [FLAGS/OPTIONS] [<task_name>]
-
-OPTIONS:
-    -f, --final-time <time>      Set final time on the task.
+    att log <task_name> <time>
 
 ARGS:
     <task_name>    Task's name or code
 ```
 
 __NOTE__ <time> must follow human format. For more information check [humnatime](https://docs.rs/humantime/2.1.0/humantime/fn.parse_duration.html)
-### report
+### list
 
-List all the tasks registered with their time logged
+List all the tasks registered with their time logged(if exists)
 
 ```
 USAGE:
-    att report [FLAGS/OPTIONS]
+    att list
 ```
 ### delete
 
@@ -54,7 +44,7 @@ Delete a task and its time logged
 
 ```
 USAGE:
-    att delete [FLAGS/OPTIONS] [<task_name>]
+    att delete <task_name>
 
 ARGS:
     <task_name>    Task's name or code
